@@ -2,7 +2,7 @@
 # DESCRIPTION: Verilator output: Make include file with class lists
 #
 # This file lists generated Verilated files, for including in higher level makefiles.
-# See Vclktick.mk for the caller.
+# See Vf1_light.mk for the caller.
 
 ### Switches...
 # C11 constructs required?  0/1 (always on now)
@@ -23,22 +23,22 @@ VM_TRACE_FST = 0
 ### Object file lists...
 # Generated module classes, fast-path, compile with highest optimization
 VM_CLASSES_FAST += \
-	Vclktick \
-	Vclktick___024root__DepSet_h9aca7cdc__0 \
+	Vf1_light \
+	Vf1_light___024root__DepSet_ha97465ec__0 \
 
 # Generated module classes, non-fast-path, compile with low/medium optimization
 VM_CLASSES_SLOW += \
-	Vclktick___024root__Slow \
-	Vclktick___024root__DepSet_h9aca7cdc__0__Slow \
+	Vf1_light___024root__Slow \
+	Vf1_light___024root__DepSet_ha97465ec__0__Slow \
 
 # Generated support classes, fast-path, compile with highest optimization
 VM_SUPPORT_FAST += \
-	Vclktick__Trace__0 \
+	Vf1_light__Trace__0 \
 
 # Generated support classes, non-fast-path, compile with low/medium optimization
 VM_SUPPORT_SLOW += \
-	Vclktick__Syms \
-	Vclktick__Trace__0__Slow \
+	Vf1_light__Syms \
+	Vf1_light__Trace__0__Slow \
 
 # Global classes, need linked once per executable, fast-path, compile with highest optimization
 VM_GLOBAL_FAST += \

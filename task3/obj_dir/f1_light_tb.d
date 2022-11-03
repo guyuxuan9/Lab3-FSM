@@ -1,4 +1,4 @@
-clktick_tb.o: ../clktick_tb.cpp \
+f1_light_tb.o: ../f1_light_tb.cpp \
  /usr/local/share/verilator/include/verilated.h \
  /usr/local/share/verilator/include/verilatedos.h \
  /usr/local/share/verilator/include/verilated_config.h \
@@ -7,5 +7,5 @@ clktick_tb.o: ../clktick_tb.cpp \
  /usr/local/share/verilator/include/verilated_vcd_c.h \
  /usr/local/share/verilator/include/verilated.h \
  /usr/local/share/verilator/include/verilated_trace.h \
- /usr/local/share/verilator/include/verilated_trace_defs.h Vclktick.h \
+ /usr/local/share/verilator/include/verilated_trace_defs.h Vf1_light.h \
  ../vbuddy.cpp

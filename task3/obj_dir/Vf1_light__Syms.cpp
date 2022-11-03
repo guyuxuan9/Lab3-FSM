@@ -1,16 +1,16 @@
 // Verilated -*- C++ -*-
 // DESCRIPTION: Verilator output: Symbol table implementation internals
 
-#include "Vclktick__Syms.h"
-#include "Vclktick.h"
-#include "Vclktick___024root.h"
+#include "Vf1_light__Syms.h"
+#include "Vf1_light.h"
+#include "Vf1_light___024root.h"
 
 // FUNCTIONS
-Vclktick__Syms::~Vclktick__Syms()
+Vf1_light__Syms::~Vf1_light__Syms()
 {
 }
 
-Vclktick__Syms::Vclktick__Syms(VerilatedContext* contextp, const char* namep, Vclktick* modelp)
+Vf1_light__Syms::Vf1_light__Syms(VerilatedContext* contextp, const char* namep, Vf1_light* modelp)
     : VerilatedSyms{contextp}
     // Setup internal state of the Syms class
     , __Vm_modelp{modelp}
