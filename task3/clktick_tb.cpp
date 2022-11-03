@@ -57,3 +57,5 @@ int main(int argc, char **argv, char **env) {
   tfp->close(); 
   exit(0);
 }
+
+// N=36 -> 1s
