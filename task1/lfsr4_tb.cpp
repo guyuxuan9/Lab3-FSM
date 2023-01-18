@@ -23,11 +23,11 @@ int main(int argc,char **argv,char **env)
 
     // init vbuddy
     if (vbdOpen()!=1) return (-1);
-    vbdHeader("L3T1: lfsr4");
+    vbdHeader("L3T1: lfsr7");
 
     // initialise simulation inputs
     top -> clk = 1;
-    top -> rst = 1;
+    top -> rst = 0;
     top -> en = 0;
     
     // vbdSetMode(1) is used to increment the counter each time the switch is pressed
@@ -44,9 +44,9 @@ int main(int argc,char **argv,char **env)
             top -> clk = !top -> clk;
             top -> eval();
         }
-
-        //vbdHex(1,int(top->data_out) & 0xF);
-        vbdBar(top->data_out & 0xFF);
+        vbdHex(2,(int(top->data_out)>>4) & 0xF);
+        vbdHex(1,int(top->data_out) & 0xF);
+        //vbdBar(top->data_out & 0xFF);
         vbdCycle(i+1);        
         if (Verilated::gotFinish()) exit(0);
     }
